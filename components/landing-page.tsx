@@ -1,7 +1,7 @@
-"use client"
-import { Button } from "@/components/ui/button"
-import { ChevronRight } from "lucide-react"
-import Link from "next/link"
+"use client";
+import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export function LandingPage() {
   return (
@@ -14,7 +14,8 @@ export function LandingPage() {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover where you truly stand on the political spectrum with our nuanced approach to political ideology.
+            Discover where you truly stand on the political spectrum with our
+            nuanced approach to political ideology.
           </p>
 
           {/* Political Compass Visualization */}
@@ -29,10 +30,18 @@ export function LandingPage() {
             <div className="absolute left-0 right-0 top-1/2 h-px bg-foreground/20"></div>
 
             {/* Labels */}
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 text-sm font-medium">Authoritarian</div>
-            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm font-medium">Libertarian</div>
-            <div className="absolute left-2 top-1/2 -translate-y-1/2 text-sm font-medium">Economic Left</div>
-            <div className="absolute right-2 top-1/2 -translate-y-1/2 text-sm font-medium">Economic Right</div>
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 text-sm font-medium">
+              Authoritarian
+            </div>
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm font-medium">
+              Libertarian
+            </div>
+            <div className="absolute left-2 top-1/2 -translate-y-1/2 text-sm font-medium">
+              Economic Left
+            </div>
+            <div className="absolute right-2 top-1/2 -translate-y-1/2 text-sm font-medium">
+              Economic Right
+            </div>
 
             {/* Center point */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full"></div>
@@ -41,8 +50,10 @@ export function LandingPage() {
 
           <div className="flex flex-col items-center space-y-6">
             <p className="text-lg max-w-2xl">
-              Our test captures the <span className="font-semibold">nuances</span> of political ideology, including the
-              distinction between centrist and radical centrist viewpoints.
+              Our test captures the{" "}
+              <span className="font-semibold">nuances</span> of political
+              ideology, including the distinction between centrist and radical
+              centrist viewpoints.
             </p>
 
             <Link href="/surveys/political-compass">
@@ -51,7 +62,9 @@ export function LandingPage() {
               </Button>
             </Link>
 
-            <p className="text-sm text-muted-foreground">Takes approximately 10 minutes to complete</p>
+            <p className="text-sm text-muted-foreground">
+              Takes approximately 10 minutes to complete
+            </p>
           </div>
         </div>
       </section>
@@ -59,7 +72,9 @@ export function LandingPage() {
       {/* Features Section */}
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">What Makes Our Test Different</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What Makes Our Test Different
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6">
@@ -70,8 +85,8 @@ export function LandingPage() {
                 Nuanced Spectrum
               </h3>
               <p className="text-muted-foreground">
-                We measure your beliefs on a continuous scale, not just binary choices, capturing the full complexity of
-                your political views.
+                We measure your beliefs on a continuous scale, not just binary
+                choices, capturing the full complexity of your political views.
               </p>
             </div>
 
@@ -83,8 +98,9 @@ export function LandingPage() {
                 Centrist Distinction
               </h3>
               <p className="text-muted-foreground">
-                Our test distinguishes between passive centrism and radical centrism, recognizing that not all moderate
-                positions are the same.
+                Our test distinguishes between passive centrism and radical
+                centrism, recognizing that not all moderate positions are the
+                same.
               </p>
             </div>
 
@@ -96,8 +112,8 @@ export function LandingPage() {
                 Multidimensional Analysis
               </h3>
               <p className="text-muted-foreground">
-                Beyond the traditional left-right spectrum, we analyze your views across multiple dimensions of
-                political thought.
+                Beyond the traditional left-right spectrum, we analyze your
+                views across multiple dimensions of political thought.
               </p>
             </div>
           </div>
@@ -117,10 +133,13 @@ export function LandingPage() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-xl font-medium mb-2">Answer Questions</h3>
+                    <h3 className="text-xl font-medium mb-2">
+                      Answer Questions
+                    </h3>
                     <p className="text-muted-foreground">
-                      Respond to a series of statements using our intuitive slider interface. Move the slider to
-                      indicate your level of agreement.
+                      Respond to a series of statements using our intuitive
+                      slider interface. Move the slider to indicate your level
+                      of agreement.
                     </p>
                   </div>
                 </div>
@@ -130,9 +149,12 @@ export function LandingPage() {
                     2
                   </div>
                   <div>
-                    <h3 className="text-xl font-medium mb-2">Get Your Results</h3>
+                    <h3 className="text-xl font-medium mb-2">
+                      Get Your Results
+                    </h3>
                     <p className="text-muted-foreground">
-                      We'll analyze your responses and plot your position on our multidimensional political compass.
+                      We analyze your responses and plot your position on our
+                      multidimensional political compass.
                     </p>
                   </div>
                 </div>
@@ -142,17 +164,22 @@ export function LandingPage() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-medium mb-2">Explore Your Ideology</h3>
+                    <h3 className="text-xl font-medium mb-2">
+                      Explore Your Ideology
+                    </h3>
                     <p className="text-muted-foreground">
-                      Discover detailed insights about your political beliefs and how they compare to different
-                      ideological frameworks.
+                      Discover detailed insights about your political beliefs
+                      and how they compare to different ideological frameworks.
                     </p>
                   </div>
                 </div>
               </div>
 
               <Link href="/surveys/political-compass">
-                <Button size="lg" className="px-8 text-lg h-12 rounded-full mt-8">
+                <Button
+                  size="lg"
+                  className="px-8 text-lg h-12 rounded-full mt-8"
+                >
                   Start Now
                 </Button>
               </Link>
@@ -162,7 +189,10 @@ export function LandingPage() {
               <div className="space-y-8">
                 <div className="space-y-2">
                   <p className="text-lg font-medium">Example Question:</p>
-                  <p>The government should prioritize economic equality over economic freedom.</p>
+                  <p>
+                    The government should prioritize economic equality over
+                    economic freedom.
+                  </p>
 
                   <div className="mt-6 space-y-4">
                     {/* Custom slider example */}
@@ -182,8 +212,9 @@ export function LandingPage() {
                 </div>
 
                 <p className="text-sm text-muted-foreground">
-                  Our slider interface allows you to express the exact degree of your agreement or disagreement,
-                  capturing the nuance in your political views.
+                  Our slider interface allows you to express the exact degree of
+                  your agreement or disagreement, capturing the nuance in your
+                  political views.
                 </p>
               </div>
             </div>
@@ -194,12 +225,15 @@ export function LandingPage() {
       {/* CTA Section */}
       <section className="py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
-          <h2 className="text-3xl font-bold">Ready to discover your true political position?</h2>
+          <h2 className="text-3xl font-bold">
+            Ready to discover your true political position?
+          </h2>
           <p className="text-muted-foreground">
-            Join thousands of others who have gained deeper insights into their political beliefs.
+            Join thousands of others who have gained deeper insights into their
+            political beliefs.
           </p>
           <Link href="/surveys/political-compass">
-            <Button size="lg" className="px-8 text-lg h-12 rounded-full">
+            <Button size="lg" className="px-8 text-lg h-12 rounded-full m-4">
               Begin the Test
             </Button>
           </Link>
@@ -209,7 +243,9 @@ export function LandingPage() {
       {/* Footer */}
       <footer className="py-6 px-4 border-t">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">© 2025 Political Compass Project. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">
+            © 2025 Political Compass Project. All rights reserved.
+          </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Button variant="link" size="sm">
               About
@@ -227,6 +263,5 @@ export function LandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
