@@ -115,16 +115,17 @@ export function PoliticalCompassTest() {
       { threshold: 0.7 }
     );
 
-    questionRefs.current.forEach((ref) => {
+    const currentRefs = questionRefs.current;
+    currentRefs.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      questionRefs.current.forEach((ref) => {
+      currentRefs.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
-  }, [questionRefs.current.length]);
+  }, [questionRefs.current.length, currentQuestionIndex]);
 
   const handleResponse = (questionIndex: number, value: number) => {
     setResponses((prev) => ({
