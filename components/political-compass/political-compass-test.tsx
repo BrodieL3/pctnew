@@ -203,7 +203,7 @@ export function PoliticalCompassTest() {
         {questions.map((question, index) => (
           <div
             key={index}
-            ref={(el) => {
+            ref={(el): void => {
               questionRefs.current[index] = el;
             }}
             className={`min-h-[calc(100vh-8rem)] flex items-center justify-center p-4 transition-opacity duration-500 ${
